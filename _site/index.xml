@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>Random Digits Blog</title>
+    <link>https://randomdigits.io/</link>
+    <atom:link href="https://randomdigits.io/index.xml" rel="self" type="application/rss+xml"/>
+    <description>Random Digits Blog
+</description>
+    <generator>Distill</generator>
+    <lastBuildDate>Sat, 27 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Welcome to Random Digits Blog</title>
+      <link>https://randomdigits.io/posts/2021-02-27-welcome-to-random-digits-blog</link>
+      <description>Welcome to the blog.</description>
+      <guid>https://randomdigits.io/posts/2021-02-27-welcome-to-random-digits-blog</guid>
+      <pubDate>Sat, 27 Feb 2021 00:00:00 +0000</pubDate>
+    </item>
+  </channel>
+</rss>

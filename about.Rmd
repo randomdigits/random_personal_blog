@@ -1,0 +1,10 @@
+---
+title: "About this blog"
+description: |
+  There isn't much to say about it.
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+As I work, I'm collecting notes about things I want to remember. This is where I will keep them. 

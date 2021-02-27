@@ -1,0 +1,20 @@
+{
+  "articles": [
+    {
+      "path": "about.html",
+      "title": "About this blog",
+      "description": "There isn't much to say about it.",
+      "author": [],
+      "contents": "\nAs I work, I’m collecting notes about things I want to remember. This is where I will keep them.\n\n\n\n",
+      "last_modified": "2021-02-27T16:38:53+00:00"
+    },
+    {
+      "path": "index.html",
+      "title": "Random Digits Blog",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2021-02-27T16:39:53+00:00"
+    }
+  ],
+  "collections": ["posts/posts.json"]
+}
