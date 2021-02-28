@@ -1,0 +1,55 @@
+---
+title: "Missing does not equal blank: your SAS jedi mind tricks won't work here."
+description: |
+  I inerited a piece of R code written by a former SAS programmer. It did not work as intended.
+author: Jonathan Bleier
+date: 02-28-2021
+output:
+  distill::distill_article:
+    self_contained: false
+categories:
+  - rstats
+  - sas
+  - missing data
+draft: true
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+I came across some code at work where the author wanted to condition an action based on the presence of missing data. Many of the people I work with also started out as and still work as SAS programmers, so we have a habit of trying to do things in R like:
+```
+if (x == "") {do something}
+```
+rather than `is.na(x)`. I found the bug because the code wasn't working properly. It was supposed to do something when data was missing. I had missing data but nothing was happening as a consequence.
+
+Let's see the difference between the the two.
+
+```{r}
+x <- c("a", "b", "", NA, "c")
+y <- c(1, 2, NA, 3)
+```
+
+Find the missing data with `x == ""`
+
+```{r}
+x == ""
+y == ""
+```
+
+What about `is.na()`?
+
+```{r}
+is.na(x)
+is.na(y)
+```
+```{r}
+
+```
+
+So, `x == ""` is true if it is literally true. In SAS programming, we can use `""` as shorthand for missing. But with R, if a vector has a value `NA`, the logical test returns `NA`. The code I was working with failed because the missing data was `NA` so the logical test in the code did not return `TRUE`.
+
+The function `is.na()` is the best way to find missing values in both character and numerical vectors with one small caveat; I have seen character data where missing values were recorded as `""`. If you have data like that, `is.na()` won't find it. 
+
