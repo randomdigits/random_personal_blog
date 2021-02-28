@@ -1,7 +1,7 @@
 ---
 title: "Missing does not equal blank: your SAS jedi mind tricks won't work here."
 description: |
-  I inerited a piece of R code written by a former SAS programmer. It did not work as intended.
+  I ihnerited a piece of R code written by a former SAS programmer. It did not work as intended.
 author: Jonathan Bleier
 date: 02-28-2021
 output:
