@@ -1,10 +1,12 @@
 ---
 title: "About this blog"
 description: |
-  There isn't much to say about it.
+  It is my notebook about statistical computing.
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
-As I work, I'm collecting notes about things I want to remember. This is where I will keep them. 
+I've been writing code to analyse data for a few years now. I read books, did courses, solved problems, and filled pages of notebooks accumulating piles of useful information. Most of it is forgotten or lost.
+
+This site will be a repository of all of that from now on so I can always find it if I need it again. 

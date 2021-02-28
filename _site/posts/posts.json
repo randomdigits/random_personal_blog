@@ -18,7 +18,7 @@
     "contents": "\nI came across some code at work where the author wanted to condition an action based on the presence of missing data. Many of the people I work with also started out as and still work as SAS programmers, so we have a habit of trying to do things in R like:\nif (x == \"\") {do something}\nrather than is.na(x). I found the bug because the code wasn’t working properly. It was supposed to do something when data was missing. I had missing data but nothing was happening as a consequence.\nLet’s see the difference between the the two.\n\n\nx <- c(\"a\", \"b\", \"\", NA, \"c\")\ny <- c(1, 2, NA, 3)\n\n\n\nFind the missing data with x == \"\"\n\n\nx == \"\"\n\n\n[1] FALSE FALSE  TRUE    NA FALSE\n\ny == \"\"\n\n\n[1] FALSE FALSE    NA FALSE\n\nWhat about is.na()?\n\n\nis.na(x)\n\n\n[1] FALSE FALSE FALSE  TRUE FALSE\n\nis.na(y)\n\n\n[1] FALSE FALSE  TRUE FALSE\n\n\n\n\nSo, x == \"\" is true if it is literally true. In SAS programming, we can use \"\" as shorthand for missing. But with R, if a vector has a value NA, the logical test returns NA. The code I was working with failed because the missing data was NA so the logical test in the code did not return TRUE.\nThe function is.na() is the best way to find missing values in both character and numerical vectors with one small caveat; I have seen character data where missing values were recorded as \"\". If you have data like that, is.na() won’t find it.\n\n\n\n",
     "preview": {},
     "last_modified": "2021-02-28T10:26:01+00:00",
-    "input_file": "missing-does-not-equal.utf8.md"
+    "input_file": {}
   },
   {
     "path": "posts/2021-02-27-welcome-to-random-digits-blog/",
@@ -30,6 +30,6 @@
     "contents": "\nWelcome\nWelcome to the blog. This is a collection of my personal notes about statistical computing. They are here so that I can find them. As such, anything you find here is a personal opinion so it does not represent the view of my employer or anyone else.\nNothing on this site is advice nor is it necessarily true or correct. All the code and ideas are freely available to use at your own discretion and at your own risk.\nPrivacy policy\nI do not collect any information about who you are or how you use this site. If you email me, I will have the email address you sent the email from. In which case, I may use the email address for the purpose of replying to you.\n\n\n\n",
     "preview": {},
     "last_modified": "2021-02-28T13:29:33+00:00",
-    "input_file": "welcome-to-random-digits-blog.utf8.md"
+    "input_file": {}
   }
 ]
