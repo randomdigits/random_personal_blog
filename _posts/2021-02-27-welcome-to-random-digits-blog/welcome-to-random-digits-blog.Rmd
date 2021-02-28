@@ -13,5 +13,12 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-Welcome to the blog. This is a collection of my personal notes about statistical computing. They are here so that I can find them. 
+## Welcome
+Welcome to the blog. This is a collection of my personal notes about statistical computing. They are here so that I can find them. As such, anything you find here is a personal opinion so it does not represent the view of my employer or anyone else.
+
+Nothing on this site is advice nor is it necessarily true or correct. All the code and ideas are freely available to use at your own discretion and at your own risk.
+
+## Privacy policy
+I do not collect any information about who you are or how you use this site. If you email me, I will have the email address you sent the email from. In which case, I may use the email address for the purpose of replying to you.
+
 
