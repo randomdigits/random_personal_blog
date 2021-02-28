@@ -7,7 +7,18 @@
     <description>Random Digits Blog
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Sat, 27 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 28 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Missing does not equal blank: your SAS jedi mind tricks won't work here.</title>
+      <dc:creator>Jonathan Bleier</dc:creator>
+      <link>https://randomdigits.io/posts/2021-02-28-missing-does-not-equal</link>
+      <description>I inerited a piece of R code written by a former SAS programmer. It did not work as intended.</description>
+      <category>rstats</category>
+      <category>sas</category>
+      <category>missing data</category>
+      <guid>https://randomdigits.io/posts/2021-02-28-missing-does-not-equal</guid>
+      <pubDate>Sun, 28 Feb 2021 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Welcome to Random Digits Blog</title>
       <link>https://randomdigits.io/posts/2021-02-27-welcome-to-random-digits-blog</link>
